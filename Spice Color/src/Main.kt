@@ -1,0 +1,17 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    val curry = Curry("spicy")
+
+    println(curry.color)
+
+    val spiceCabinet = listOf(
+        SpiceContainer(Curry("mild")),
+        SpiceContainer(Curry("medium")),
+        SpiceContainer(Curry("spicy"))
+    )
+
+    spiceCabinet.forEach {
+        println(it.label)
+    }
+}
